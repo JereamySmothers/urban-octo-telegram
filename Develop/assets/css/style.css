@@ -1,3 +1,9 @@
+:root {
+    --main-color:#ffffff;
+    --main-pixel-size: 20px;
+    --main-font-style: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,11 +14,12 @@ body {
     background-color: #d9dcd6;
 }
 
+/*header styles*/
 .header {
-    padding: 20px;
+    padding: var(--main-pixel-size);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
-    color: #ffffff;
+    color: var(--main-color);
 }
 
 .header h1 {
@@ -26,10 +33,10 @@ body {
 
 .header div {
     padding-top: 15px;
-    margin-right: 20px;
+    margin-right: var(--main-pixel-size);
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-family: var(--main-font-style);
+    font-size: var(--main-pixel-size);
 }
 
 .header div ul {
@@ -40,15 +47,7 @@ body {
     display: inline-block;
     margin-left: 25px;
 }
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-p {
-    font-size: 16px;
-}
+/*End Header styles*/
 
 .hero {
     height: 800px;
@@ -57,6 +56,21 @@ p {
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
+}
+
+a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: var(--main-pixel-size);
 }
 
 .float-left {
@@ -69,36 +83,31 @@ p {
     margin-left: 25px;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
+/*Benefits styles*/
 .benefits {
-    margin-right: 20px;
-    padding: 20px;
+    margin-right: var(--main-pixel-size);
+    padding: var(--main-pixel-size);
     clear: both;
     float: right;
     width: 20%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--main-font-style);
     background-color: #2589bd;
 }
 
 .benefit-lead {
     margin-bottom: 32px;
-    color: #ffffff;
+    color: var(--main-color);
 }
 
 .benefit-brand {
     margin-bottom: 32px;
-    color: #ffffff;
+    color: var(--main-color);
 }
 
 .benefit-cost {
     margin-bottom: 32px;
-    color: #ffffff;
+    color: var(--main-color);
 }
 
 .benefit-lead h3 {
@@ -133,32 +142,33 @@ p {
     margin: 10px auto;
     max-width: 150px;
 }
+/*End Benefit styles*/
 
 .search-engine-optimization {
-    margin-bottom: 20px;
+    margin-bottom: var(--main-pixel-size);
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--main-font-style);
     background-color: #0072bb;
-    color: #ffffff;
+    color: var(--main-color);
 }
 
 .online-reputation-management {
-    margin-bottom: 20px;
+    margin-bottom: var(--main-pixel-size);
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--main-font-style);
     background-color: #0072bb;
-    color: #ffffff;
+    color: var(--main-color);
 }
 
 .social-media-marketing {
-    margin-bottom: 20px;
+    margin-bottom: var(--main-pixel-size);
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--main-font-style);
     background-color: #0072bb;
-    color: #ffffff;
+    color: var(--main-color);
 }
 
 .search-engine-optimization img {
@@ -174,17 +184,17 @@ p {
 }
 
 .search-engine-optimization h2 {
-    margin-bottom: 20px;
+    margin-bottom: var(--main-pixel-size);
     font-size: 36px;
 }
 
 .online-reputation-management h2 {
-    margin-bottom: 20px;
+    margin-bottom: var(--main-pixel-size);
     font-size: 36px;
 }
 
 .social-media-marketing h2 {
-    margin-bottom: 20px;
+    margin-bottom: var(--main-pixel-size);
     font-size: 36px;
 }
 
@@ -196,5 +206,5 @@ p {
 }
 
 .footer h2 {
-    font-size: 20px;
+    font-size: var(--main-pixel-size);
 }
